@@ -78,6 +78,7 @@ body {
 /****** FILTERS *****/
 .queryfilterglobal {
     background-color: #272a34;
+    color: #ffffff;
     min-height: 100vh;
     height: 100%;
     position: fixed;
@@ -167,7 +168,7 @@ tr td {
     text-align: center;
     justify-content: center;
     min-width: 40px;
-    vertical-align: central;
+    vertical-align: middle;
 }
 
 tr {
