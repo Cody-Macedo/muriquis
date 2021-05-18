@@ -1,473 +1,617 @@
-body{
-	color: var(--body-color);
-	font-weight:bold;
-	background-color: var(--body-background-color);
-	font-family: georgia, serif;
-}
-.center {
-	margin-right: auto;
-	text-align: center;
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+blockquote, q {
+    quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: var(--body-color);
+    font-weight: bold;
+    background-color: var(--body-background-color);
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+.center {
+    margin-right: auto;
+    text-align: center;
+
+}
+
+.contenu {
+    display: flex;
+    flex-direction: row;
 }
 
 /****** FILTERS *****/
 .queryfilterglobal {
-	display: inline;
+    background-color: #272a34;
+    min-height: 100vh;
+    height: 100%;
+    position: fixed;
+    width: 25%;
+    padding: 30px;
+    overflow-y: scroll;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
 }
-.queryfilter {
-	float: left;
-	margin-left: auto;
-	margin-right: 10px;
-	border-radius: 25px;
-	padding: 10px; 
-	width: auto;
-	height: auto;
-	background-color: var(--menu-bg-color);
-	color: var(--menu-text-color);
-	font-weight: normal;
+.queryfilterglobal::-webkit-scrollbar { /* WebKit */
+    width: 0;
+    height: 0;
 }
-.queryfilter input{
-	margin-left: 10px;
-	margin-right 10px;
-	margin-bottom: 5px;
+.queryfilterglobal input{
+    background-color: #272a34;
+    margin-top: 6px;
+    margin-bottom: 15px;
+    border: 3px solid #363c47;
+    border-radius: 5px;
+    color: #ffffff;
+    height: 40px
 }
-.queryfilter .label{
-	color: var(--menu-text-inverse-color);;
-	background-color: var(--menu-text-color);
-	border-radius: 25px;
-    padding-left: 10px;
-    padding-right: 10px;
-    width: auto;
-    height: 20px;
+
+.queryfilter_titre{
+    font-size: 25px;
+    padding-bottom: 5px;
+    font-weight: 600;
 }
-.queryfilter .slider{
-	width: 300px;
+.queryfilter{
+    padding-bottom: 20px;
+    margin-bottom: 30px;
+    border-bottom: solid 2px #fff;
 }
 
 audio::-webkit-media-controls-play-button,
-     audio::-webkit-media-controls-panel {
-     background-color:var(--body-background-color);
-     color: var(--body-color);
-     }
+audio::-webkit-media-controls-panel {
+    background-color: var(--body-background-color);
+    color: var(--body-color);
+}
 
 /****** TABLE ******/
 .rTable {
-  	display: table;
-  	width: 99%;
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin-left: 25%;
+    padding: 80px 20px 20px 20px;
 }
+
 .rTable .odd {
-	background-color: var(--table-odd-background-color);
-	color: var(--table-odd-color);
+    background-color: var(--table-odd-background-color);
+    color: var(--table-odd-color);
 }
+
 .rTable .even {
-	background-color: var(--table-even-background-color);
-	color: var(--table-even-color);
+    background-color: var(--table-even-background-color);
+    color: var(--table-even-color);
 }
 
 .rTableRow {
-  	display: table-row;
-	background-color: var(--table-even-background-color);
-	color: var(--table-odd-color);
+    display: table-row;
+    background-color: var(--table-even-background-color);
+    color: var(--table-odd-color);
 }
+
 .rTableRow:hover {
-  	background-color: var(--table-hover-background-color);
-	color: var(--table-hover-color);
+    background-color: var(--table-hover-background-color);
+    color: var(--table-hover-color);
 }
 
 .rTableCell, .rTableHead {
-  	display: table-cell;
-  	padding: 3px 10px;
-  	border: 1px solid var(--table-cell-border-color);
-	font-weight: normal;
-}
-.rTableHeadCell {
-	color: var(--table-header-color);
-	display: table-cell;
-  	background-color: var(--table-header-background-color);
-  	font-weight: bold;
-  	width:10%;
-  	padding: 3px 10px;
-  	border: 1px solid var(--table-cell-border-color);
-}
-.rTableHeading {
-	color: var(--table-header-color);
-  	display: table-header-group;
-  	background-color: var(--table-header-background-color);
-  	font-weight: bold;
-}
-.rTableFoot {
-  	display: table-footer-group;
-  	font-weight: bold;
-  	background-color: #ddd;
-}
-.rTableBody {
-  	display: table-row-group;
+    display: table-cell;
+    padding: 3px 10px;
+    border: 1px solid var(--table-cell-border-color);
+    font-weight: normal;
 }
 
+.rTableHeadCell {
+    color: var(--table-header-color);
+    display: table-cell;
+    background-color: var(--table-header-background-color);
+    font-weight: bold;
+    width: 10%;
+    padding: 3px 10px;
+    border: 1px solid var(--table-cell-border-color);
+}
+
+.rTableHeading {
+    color: var(--table-header-color);
+    display: table-header-group;
+    background-color: var(--table-header-background-color);
+    font-weight: bold;
+}
+
+.rTableFoot {
+    display: table-footer-group;
+    font-weight: bold;
+    background-color: #ddd;
+}
+
+.rTableBody {
+    display: table-row-group;
+}
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;500;700;900&display=swap');
 
 /****** MENU *******/
 /*@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700);*/
 #cssmenu {
-  background:var(--menu-bg-color);
-  margin: 0;
-  width: auto;
-  padding: 0;
-  line-height: 1;
-  display: block;
-  position: relative;
-  font-family: georgia, serif;
+    background: var(--menu-bg-color);
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    position: fixed;
+    font-family: 'Noto Sans KR', sans-serif;
+    margin-left: 25%;
+    width: 75%;
+    height: 55px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    z-index: 999;
 }
+
 #cssmenu ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: block;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: block;
 }
+
 #cssmenu ul:after,
 #cssmenu:after {
-  content: " ";
-  display: block;
-  font-size: 0;
-  height: 0;
-  clear: both;
-  visibility: hidden;
+    content: " ";
+    display: block;
+    font-size: 0;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }
+
 #cssmenu ul li {
-  margin: 0;
-  padding: 0;
-  display: block;
-  position: relative;
+    margin: 0;
+    padding: 0;
+    display: block;
+    position: relative;
 }
+
 #cssmenu ul li a {
-  text-decoration: none;
-  display: block;
-  margin: 0;
-  -webkit-transition: color .2s ease;
-  -moz-transition: color .2s ease;
-  -ms-transition: color .2s ease;
-  -o-transition: color .2s ease;
-  transition: color .2s ease;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
+    text-decoration: none;
+    display: block;
+    margin: 0;
+    -webkit-transition: color .2s ease;
+    -moz-transition: color .2s ease;
+    -ms-transition: color .2s ease;
+    -o-transition: color .2s ease;
+    transition: color .2s ease;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
 }
+
 #cssmenu ul li ul {
-  position: absolute;
-  left: -9999px;
-  top: auto;
+    position: absolute;
+    left: -9999px;
+    top: auto;
 }
+
 #cssmenu ul li ul li {
-  max-height: 0;
-  position: absolute;
-  -webkit-transition: max-height 0.4s ease-out;
-  -moz-transition: max-height 0.4s ease-out;
-  -ms-transition: max-height 0.4s ease-out;
-  -o-transition: max-height 0.4s ease-out;
-  transition: max-height 0.4s ease-out;
-  background: var(--menu-text-color);
+    max-height: 0;
+    position: absolute;
+    -webkit-transition: max-height 0.4s ease-out;
+    -moz-transition: max-height 0.4s ease-out;
+    -ms-transition: max-height 0.4s ease-out;
+    -o-transition: max-height 0.4s ease-out;
+    transition: max-height 0.4s ease-out;
+    background: var(--menu-text-color);
 }
+
 #cssmenu ul li ul li.has-sub:after {
-  display: block;
-  position: absolute;
-  content: "";
-  height: 10px;
-  width: 10px;
-  border-radius: 5px;
-  background: var(--menu-text-inverse-color);
-  z-index: 1;
-  top: 13px;
-  right: 15px;
+    display: block;
+    position: absolute;
+    content: "";
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    background: var(--menu-text-inverse-color);
+    z-index: 1;
+    top: 13px;
+    right: 15px;
 }
+
 #cssmenu.align-right ul li ul li.has-sub:after {
-  right: auto;
-  left: 15px;
+    right: auto;
+    left: 15px;
 }
+
 #cssmenu ul li ul li.has-sub:before {
-  display: block;
-  position: absolute;
-  content: "";
-  height: 0;
-  width: 0;
-  border: 3px solid transparent;
-  border-left-color: var(--menu-text-color);
-  z-index: 2;
-  top: 15px;
-  right: 15px;
+    display: block;
+    position: absolute;
+    content: "";
+    height: 0;
+    width: 0;
+    border: 3px solid transparent;
+    border-left-color: var(--menu-text-color);
+    z-index: 2;
+    top: 15px;
+    right: 15px;
 }
+
 #cssmenu.align-right ul li ul li.has-sub:before {
-  right: auto;
-  left: 15px;
-  border-left-color: transparent;
-  border-right-color: var(--menu-text-color);
+    right: auto;
+    left: 15px;
+    border-left-color: transparent;
+    border-right-color: var(--menu-text-color);
 }
+
 #cssmenu ul li ul li a {
-  font-size: 14px;
-  font-weight: 400;
-  text-transform: none;
-  color: var(--menu-text-inverse-color);
-  letter-spacing: 0;
-  display: block;
-  width: 170px;
-  padding: 11px 10px 11px 20px;
+    font-size: 14px;
+    font-weight: 400;
+    text-transform: none;
+    color: var(--menu-text-inverse-color);
+    letter-spacing: 0;
+    display: block;
+    width: 170px;
+    padding: 11px 10px 11px 20px;
 }
+
 #cssmenu ul li ul li:hover > a,
 #cssmenu ul li ul li.active > a {
-  color: var(--menu-bg-hover-color);
+    color: var(--menu-bg-hover-color);
 }
+
 #cssmenu ul li ul li:hover:after,
 #cssmenu ul li ul li.active:after {
-  background: var(--menu-bg-hover-color);
+    background: var(--menu-bg-hover-color);
 }
+
 #cssmenu ul li ul li:hover > ul {
-  left: 100%;
-  top: 0;
+    left: 100%;
+    top: 0;
 }
+
 #cssmenu ul li ul li:hover > ul > li {
-  max-height: 72px;
-  position: relative;
+    max-height: 72px;
+    position: relative;
 }
+
 #cssmenu > ul > li {
-  float: left;
+    float: left;
 }
+
 #cssmenu.align-center > ul > li {
-  float: none;
-  display: inline-block;
+    float: none;
+    display: inline-block;
 }
+
 #cssmenu.align-center > ul {
-  text-align: center;
+    text-align: center;
 }
+
 #cssmenu.align-center ul ul {
-  text-align: left;
+    text-align: left;
 }
+
 #cssmenu.align-right > ul {
-  float: right;
+    float: right;
 }
+
 #cssmenu.align-right > ul > li:hover > ul {
-  left: auto;
-  right: 0;
+    left: auto;
+    right: 0;
 }
+
 #cssmenu.align-right ul ul li:hover > ul {
-  right: 100%;
-  left: auto;
+    right: 100%;
+    left: auto;
 }
+
 #cssmenu.align-right ul ul li a {
-  text-align: right;
+    text-align: right;
 }
+
 #cssmenu > ul > li:after {
-  content: "";
-  display: block;
-  position: absolute;
-  width: 100%;
-  height: 0;
-  top: 0;
-  z-index: 0;
-  background: var(--menu-text-color);
-  -webkit-transition: height .2s;
-  -moz-transition: height .2s;
-  -ms-transition: height .2s;
-  -o-transition: height .2s;
-  transition: height .2s;
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 0;
+    top: 0;
+    z-index: 0;
+    background: var(--menu-text-color);
+    -webkit-transition: height .2s;
+    -moz-transition: height .2s;
+    -ms-transition: height .2s;
+    -o-transition: height .2s;
+    transition: height .2s;
 }
+
 #cssmenu > ul > li.has-sub > a {
-  padding-right: 40px;
+    padding-right: 40px;
 }
+
 #cssmenu > ul > li.has-sub > a:after {
-  display: block;
-  content: "";
-  background: var(--menu-text-color);
-  height: 12px;
-  width: 12px;
-  position: absolute;
-  border-radius: 13px;
-  right: 14px;
-  top: 16px;
+    display: block;
+    content: "";
+    background: var(--menu-text-color);
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    border-radius: 13px;
+    right: 14px;
+    top: 16px;
 }
+
 #cssmenu > ul > li.has-sub > a:before {
-  display: block;
-  content: "";
-  border: 4px solid transparent;
-  border-top-color: var(--menu-bg-hover-color);
-  z-index: 2;
-  height: 0;
-  width: 0;
-  position: absolute;
-  right: 16px;
-  top: 21px;
+    display: block;
+    content: "";
+    border: 4px solid transparent;
+    border-top-color: var(--menu-bg-hover-color);
+    z-index: 2;
+    height: 0;
+    width: 0;
+    position: absolute;
+    right: 16px;
+    top: 21px;
 }
+
 #cssmenu > ul > li > a {
-  color: var(--menu-text-color);
-  padding: 15px 20px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  font-size: 14px;
-  z-index: 2;
-  position: relative;
+    color: var(--menu-text-color);
+    padding: 15px 20px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 14px;
+    z-index: 2;
+    position: relative;
 }
+
 #cssmenu > ul > li:hover:after,
 #cssmenu > ul > li.active:after {
-  height: 100%;
+    height: 100%;
 }
+
 #cssmenu > ul > li:hover > a,
 #cssmenu > ul > li.active > a {
-  color: var(--menu-text-inverse-color);
+    color: var(--menu-text-inverse-color);
 }
+
 #cssmenu > ul > li:hover > a:after,
 #cssmenu > ul > li.active > a:after {
-  background: var(--menu-text-inverse-color);
+    background: var(--menu-text-inverse-color);
 }
+
 #cssmenu > ul > li:hover > a:before,
 #cssmenu > ul > li.active > a:before {
-  border-top-color: var(--menu-text-color);
+    border-top-color: var(--menu-text-color);
 }
+
 #cssmenu > ul > li:hover > ul {
-  left: 0;
-}
-#cssmenu > ul > li:hover > ul > li {
-  max-height: 72px;
-  position: relative;
-}
-#cssmenu #menu-button {
-  display: none;
-}
-#cssmenu > ul > li > a {
-  display: block;
-}
-#cssmenu > ul > li {
-  width: auto;
-}
-#cssmenu > ul > li > ul {
-  width: 170px;
-  display: block;
-}
-#cssmenu > ul > li > ul > li {
-  width: 170px;
-  display: block;
-}
-@media all and (max-width: 800px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
-  #cssmenu > ul {
-    max-height: 0;
-    overflow: hidden;
-    -webkit-transition: max-height 0.35s ease-out;
-    -moz-transition: max-height 0.35s ease-out;
-    -ms-transition: max-height 0.35s ease-out;
-    -o-transition: max-height 0.35s ease-out;
-    transition: max-height 0.35s ease-out;
-  }
-  #cssmenu > ul > li > ul {
-    width: 100%;
-    display: block;
-  }
-  #cssmenu.align-right ul li a {
-    text-align: left;
-  }
-  #cssmenu > ul > li > ul > li {
-    width: 100%;
-    display: block;
-  }
-  #cssmenu.align-right ul ul li a {
-    text-align: left;
-  }
-  #cssmenu > ul > li > ul > li > a {
-    width: 100%;
-    display: block;
-  }
-  #cssmenu ul li ul li a {
-    width: 100%;
-  }
-  #cssmenu.align-center > ul {
-    text-align: left;
-  }
-  #cssmenu.align-center > ul > li {
-    display: block;
-  }
-  #cssmenu > ul.open {
-    max-height: 1000px;
-    border-top: 1px solid var(--menu-open-border-top-color);
-  }
-  #cssmenu ul {
-    width: 100%;
-  }
-  #cssmenu ul > li {
-    float: none;
-    width: 100%;
-  }
-  #cssmenu ul li a {
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 100%;
-    padding: 12px 20px;
-  }
-  #cssmenu ul > li:after {
-    display: none;
-  }
-  #cssmenu ul li.has-sub > a:after,
-  #cssmenu ul li.has-sub > a:before,
-  #cssmenu ul li ul li.has-sub:after,
-  #cssmenu ul li ul li.has-sub:before {
-    display: none;
-  }
-  #cssmenu ul li ul,
-  #cssmenu ul li ul li ul,
-  #cssmenu ul li ul li:hover > ul,
-  #cssmenu.align-right ul li ul,
-  #cssmenu.align-right ul li ul li ul,
-  #cssmenu.align-right ul li ul li:hover > ul {
     left: 0;
+}
+
+#cssmenu > ul > li:hover > ul > li {
+    max-height: 72px;
     position: relative;
-    right: auto;
-  }
-  #cssmenu ul li ul li,
-  #cssmenu ul li:hover > ul > li {
-    max-height: 999px;
-    position: relative;
-    background: none;
-  }
-  #cssmenu ul li ul li a {
-    padding: 8px 20px 8px 35px;
-    color: var(--menu-text-color);
-  }
-  #cssmenu ul li ul ul li a {
-    padding: 8px 20px 8px 50px;
-  }
-  #cssmenu ul li ul li:hover > a {
-    color: var(--menu-text-inverse-color);
-  }
-  #cssmenu #menu-button {
+}
+
+#cssmenu #menu-button {
+    display: none;
+}
+
+#cssmenu > ul > li > a {
     display: block;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    box-sizing: border-box;
-    width: 100%;
-    padding: 15px 20px;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-size: 14px;
-    letter-spacing: 1px;
-    color: var(--menu-text-color);
-    cursor: pointer;
-  }
-  #cssmenu #menu-button:after {
-    color: var(--body-color);
+}
+
+#cssmenu > ul > li {
+    width: auto;
+}
+
+#cssmenu > ul > li > ul {
+    width: 170px;
     display: block;
-    content: '';
-    position: absolute;
-    height: 3px;
-    width: 22px;
-    border-top: 2px solid var(--menu-text-color);
-    border-bottom: 2px solid var(--menu-text-color);
-    right: 20px;
-    top: 16px;
-  }
-  #cssmenu #menu-button:before {
+}
+
+#cssmenu > ul > li > ul > li {
+    width: 170px;
     display: block;
-    content: '';
-    position: absolute;
-    height: 3px;
-    width: 22px;
-    border-top: 2px solid var(--menu-text-color);
-    right: 20px;
-    top: 26px;
-  }
+}
+
+@media all and (max-width: 800px), only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (-o-min-device-pixel-ratio: 2/1) and (max-width: 1024px), only screen and (min-device-pixel-ratio: 2) and (max-width: 1024px), only screen and (min-resolution: 192dpi) and (max-width: 1024px), only screen and (min-resolution: 2dppx) and (max-width: 1024px) {
+    #cssmenu > ul {
+        max-height: 0;
+        overflow: hidden;
+        -webkit-transition: max-height 0.35s ease-out;
+        -moz-transition: max-height 0.35s ease-out;
+        -ms-transition: max-height 0.35s ease-out;
+        -o-transition: max-height 0.35s ease-out;
+        transition: max-height 0.35s ease-out;
+    }
+
+    #cssmenu > ul > li > ul {
+        width: 100%;
+        display: block;
+    }
+
+    #cssmenu.align-right ul li a {
+        text-align: left;
+    }
+
+    #cssmenu > ul > li > ul > li {
+        width: 100%;
+        display: block;
+    }
+
+    #cssmenu.align-right ul ul li a {
+        text-align: left;
+    }
+
+    #cssmenu > ul > li > ul > li > a {
+        width: 100%;
+        display: block;
+    }
+
+    #cssmenu ul li ul li a {
+        width: 100%;
+    }
+
+    #cssmenu.align-center > ul {
+        text-align: left;
+    }
+
+    #cssmenu.align-center > ul > li {
+        display: block;
+    }
+
+    #cssmenu > ul.open {
+        max-height: 1000px;
+        border-top: 1px solid var(--menu-open-border-top-color);
+    }
+
+    #cssmenu ul {
+        width: 100%;
+    }
+
+    #cssmenu ul > li {
+        float: none;
+        width: 100%;
+    }
+
+    #cssmenu ul li a {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 12px 20px;
+    }
+
+    #cssmenu ul > li:after {
+        display: none;
+    }
+
+    #cssmenu ul li.has-sub > a:after,
+    #cssmenu ul li.has-sub > a:before,
+    #cssmenu ul li ul li.has-sub:after,
+    #cssmenu ul li ul li.has-sub:before {
+        display: none;
+    }
+
+    #cssmenu ul li ul,
+    #cssmenu ul li ul li ul,
+    #cssmenu ul li ul li:hover > ul,
+    #cssmenu.align-right ul li ul,
+    #cssmenu.align-right ul li ul li ul,
+    #cssmenu.align-right ul li ul li:hover > ul {
+        left: 0;
+        position: relative;
+        right: auto;
+    }
+
+    #cssmenu ul li ul li,
+    #cssmenu ul li:hover > ul > li {
+        max-height: 999px;
+        position: relative;
+        background: none;
+    }
+
+    #cssmenu ul li ul li a {
+        padding: 8px 20px 8px 35px;
+        color: var(--menu-text-color);
+    }
+
+    #cssmenu ul li ul ul li a {
+        padding: 8px 20px 8px 50px;
+    }
+
+    #cssmenu ul li ul li:hover > a {
+        color: var(--menu-text-inverse-color);
+    }
+
+    #cssmenu #menu-button {
+        display: block;
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        width: 100%;
+        padding: 15px 20px;
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 14px;
+        letter-spacing: 1px;
+        color: var(--menu-text-color);
+        cursor: pointer;
+    }
+
+    #cssmenu #menu-button:after {
+        color: var(--body-color);
+        display: block;
+        content: '';
+        position: absolute;
+        height: 3px;
+        width: 22px;
+        border-top: 2px solid var(--menu-text-color);
+        border-bottom: 2px solid var(--menu-text-color);
+        right: 20px;
+        top: 16px;
+    }
+
+    #cssmenu #menu-button:before {
+        display: block;
+        content: '';
+        position: absolute;
+        height: 3px;
+        width: 22px;
+        border-top: 2px solid var(--menu-text-color);
+        right: 20px;
+        top: 26px;
+    }
 }
