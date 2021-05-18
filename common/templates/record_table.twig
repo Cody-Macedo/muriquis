@@ -1,21 +1,48 @@
-<div class="rTable">
-	<div class="rTableHeading">
-		<div class="rTableHead">&nbsp;</div>
-		{% for data in metas["record"] %}
-			<div class="rTableHead"><span class="header">{{data["label"]}}</span></div>
-		{% endfor %}
-		<div class="rTableHead">&nbsp;</div>
-		{% for data in metas["production"] %}
-			<div class="rTableHead"><span class="header">{{data["label"]}}</span></div>
-		{% endfor %}
-		{% for data in metas["speaker"] %}
-			<div class="rTableHead"><span class="header">{{data["label"]}}</span></div>
-		{% endfor %}
-			<div class="rTableHead">&nbsp;</div>
-	</div>
-	{% for data in results %}
-	<div class="rTableRow {% if loop.index % 2 == 0%}even{% else %}odd{% endif %}" id="record{{ data["record_id"] }}">
-				{% include 'one_record.twig' with {'data': data, 'metas':metas} %}
-	</div>
-	{% endfor %}
-</div>
+<table class="table">
+    <thead>
+    <tr>
+        <th></th>
+        {% for data in metas["record"] %}
+            <th><span class="header">{{ data["label"] }}</span></th>
+        {% endfor %}
+        {% for data in metas["production"] %}
+            <th><span class="header">{{ data["label"] }}</span></th>
+        {% endfor %}
+        <th>1</th>
+        {% for data in metas["speaker"] %}
+            <th><span class="header">{{ data["label"] }}</span></th>
+        {% endfor %}
+        <th>Audio</th>
+    </tr>
+    </thead>
+    <tbody>
+    {% for data in results %}
+            {% include 'one_record.twig' with {'data': data, 'metas':metas} %}
+    {% endfor %}
+    </tbody>
+</table>
+
+
+{#<div class="rTable">#}
+{#    <div class="rTableHeading">#}
+{#        <div class="rTableHead">&nbsp;</div>#}
+{#        {% for data in metas["record"] %}#}
+{#            <div class="rTableHead"><span class="header">{{ data["label"] }}</span></div>#}
+{#        {% endfor %}#}
+{#        <div class="rTableHead">&nbsp;</div>#}
+{#        {% for data in metas["production"] %}#}
+{#            <div class="rTableHead"><span class="header">{{ data["label"] }}</span></div>#}
+{#        {% endfor %}#}
+{#        {% for data in metas["speaker"] %}#}
+{#            <div class="rTableHead"><span class="header">{{ data["label"] }}</span></div>#}
+{#        {% endfor %}#}
+{#        <div class="rTableHead">&nbsp;</div>#}
+{#    </div>#}
+{#    #}{# {{ dump(results) }} #}
+{#    {% for data in results %}#}
+{#        <div class="rTableRow {% if loop.index % 2 == 0 %}even{% else %}odd{% endif %}"#}
+{#             id="record{{ data["record_id"] }}">#}
+{#            {% include 'one_record.twig' with {'data': data, 'metas':metas} %}#}
+{#        </div>#}
+{#    {% endfor %}#}
+{#</div>#}
