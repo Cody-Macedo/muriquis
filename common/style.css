@@ -150,7 +150,7 @@ audio::-webkit-media-controls-fullscreen-button {
     border-collapse: collapse;
     table-layout: auto;
     background: white;
-    margin-top: 80px;
+    margin-top: 50px;
 }
 
 thead {
@@ -281,7 +281,9 @@ tr td:first-child {
     margin-left: 25%;
     width: 75%;
     z-index: 999;
+    border-bottom: 20px solid var(--body-background-color);
 }
+
 #cssmenu ul{
     flex-direction: row;
     display: flex;
