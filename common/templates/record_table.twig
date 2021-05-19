@@ -1,4 +1,4 @@
-<table class="table">
+<table class="table_default display" id="tableapp">
     <thead>
     <tr>
         <th></th>
@@ -21,6 +21,13 @@
     {% endfor %}
     </tbody>
 </table>
+<script>
+    $(document).ready( function () {
+        $('#tableapp').DataTable( {
+            paging: false
+        } );
+    } );
+</script>
 
 
 {#<div class="rTable">#}

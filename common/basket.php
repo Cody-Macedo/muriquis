@@ -52,7 +52,7 @@ echo $twig->render('index.twig', array("metas"=>$metas, "values"=>$values, "resu
         width: 100%;
         margin-left: 0;
     }
-    .table{
+    .table_default{
         margin-left: 20px;
         margin-top: 80px;
     }

@@ -13,7 +13,7 @@ echo $twig->render('about.twig', array("pid"=>$pid));
         width: 100%;
         margin-left: 0;
     }
-    .table{
+    .table_default{
         margin-left: 20px;
     }
 
