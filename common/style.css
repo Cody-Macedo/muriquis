@@ -153,12 +153,12 @@ audio::-webkit-media-controls-fullscreen-button {
     margin-top: 50px;
 }
 
-thead {
+.table thead {
     color: black;
     background: white;
 }
 
-th {
+.table th {
     height: 70px;
     text-align: center;
     min-width: 20px;
@@ -169,7 +169,7 @@ th {
     z-index: 999;
 }
 
-tr td {
+.table tr td {
     padding-bottom: 20px;
     padding-top: 20px;
     text-align: center;
@@ -178,35 +178,35 @@ tr td {
     vertical-align: middle;
 }
 
-tr {
+.table tr {
     border-bottom: 2px solid #d9d9d9;
     margin-right: 200px;
 }
 
-tr:first-child td{
+.table tr:first-child td{
     padding-top: 40px;
 }
 
 
-tbody tr:hover {
+.table tbody tr:hover {
     background: #d1d1d1;
 }
 
-tr:last-child {
+.table tr:last-child {
     border-bottom: none;
 }
 
-tr td:last-child {
+.table tr td:last-child {
     padding-right: 5px;
     padding-left: 5px;
 }
 
-tr td:first-child {
+.table tr td:first-child {
     padding-right: 15px;
     padding-left: 15px;
 }
 
-.saveButton{
+.table .saveButton{
     cursor: pointer;
 }
 
