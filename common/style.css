@@ -306,7 +306,26 @@ tr td:first-child {
 }
 
 /* barre slide */
+.ui-widget.ui-widget-content {
+    background: #272A34;
+    border: 1px solid #FF6E13;
+    height: 6px;
+}
+/* intérieur slide */
+.ui-slider .ui-slider-range {
+    background: #FF6E13;
+    border: 1px solid #272A34;
+}
+/* bouton slide */
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
-    background: red;
+    background: #ffffff;
     border-radius: 50px;
+    border: 1px solid #272A34;
+}
+.ui-slider .ui-slider-handle {
+    width: 1em;
+    height: 1em;
+}
+.ui-slider-horizontal .ui-slider-handle {
+    top: -.4em;
 }
