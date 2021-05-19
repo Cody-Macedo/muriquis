@@ -24,7 +24,7 @@
 		<li><a href='basket.php'><span>Basket</span></a></li>
 		<li><a href='about.php'><span>About</span></a></li>
 	{% if user_id != -1 %}
-		<li class='has-sub'><a href='#'><span>Database Management</span></a>
+		<li class='has-sub' id="has-sub"><a href='#'><span>Database Management</span></a>
 		  <ul>
 				<li><a href='manage_meta.php?table=record'><span>Records</span></a></li>
 				<li><a href='manage_meta.php?table=production'><span>Productions</span></a></li>
@@ -59,7 +59,9 @@
 				}
 			});
 		});
-		} )( jQuery );*/
+		} )( jQuery );
+		 */
+
 	</script>
 {% endif %}
 <div id="main" class="contenu">
