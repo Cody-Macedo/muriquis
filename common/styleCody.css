@@ -1,3 +1,7 @@
+/*
+LOGIN
+*/
+
 .login-container{
     background: white;
     justify-content: center;
@@ -9,15 +13,14 @@
 .login-container input {
     width: 100%;
     padding: 12px 20px;
-    margin: 8px 0;
     display: inline-block;
     border: 1px solid #ccc;
     background-color: #f6f6f6;
     box-sizing: border-box;
-    margin-right: 60px;
+    margin: 8px 60px 8px 0;
 }
 
-button {
+.login-container button {
     background-color: #239B56;
     color: white;
     padding: 14px 20px;
@@ -27,7 +30,7 @@ button {
     font-size: medium;
     width: 100%;
 }
-button[type=submit]{
+.login-container button[type=submit]{
     margin-top: 20px;
 }
 
@@ -35,4 +38,77 @@ button[type=submit]{
     font-size: smaller;
     color: #363c47;
     font-weight: lighter;
+}
+
+/*
+ABOUT
+*/
+
+.image-about{
+    width: 30%;
+    height: auto;
+    margin-right: 20px;
+}
+
+
+
+.about-container{
+    margin: 7% 20% 7%;
+}
+
+.about-container h1{
+    font-weight: lighter;
+    font-size: xx-large;
+    margin-bottom: 20px;
+}
+.about-container h2{
+    font-weight: lighter;
+    font-size: x-large;
+    margin-bottom: 20px;
+}
+
+.about-container p{
+    font-weight: lighter;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    line-height: 1.7em;}
+
+.block-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border: 3px solid red;*/
+    clear: both;
+    margin-bottom: 5%;
+}
+
+.block-paragraph{
+    margin-bottom: 5%;
+    /*border: 2px solid red;*/
+}
+.menu-about{
+    text-align: center;
+    margin-bottom: 10%;
+}
+.menu-about a{
+    text-decoration: none;
+    color: white;
+}
+
+.menu-about a button{
+    background-color: #239B56;
+    border: 2px solid #239B56;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 8px;
+    cursor: pointer;
+    font-size: medium;
+    transition: 0.3s;
+    border-radius: 3px;
+}
+
+.menu-about a button:hover{
+    background-color: transparent;
+    border: 2px solid #239B56;
+    color: black;
 }
