@@ -17,4 +17,5 @@ echo $twig->render('about.twig', array("pid"=>$pid));
         margin-left: 20px;
     }
 
+
 </style>

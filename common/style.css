@@ -89,7 +89,8 @@ body {
     font-size: 14px;
     color: #c1beba;
 }
-.queryfilterglobal .button_validate{
+
+.queryfilterglobal .button_validate {
     width: 100%;
     height: 40px;
     border: none;
@@ -99,7 +100,8 @@ body {
     margin-bottom: 10px;
     cursor: pointer;
 }
-.queryfilterglobal .button_clear{
+
+.queryfilterglobal .button_clear {
     width: 100%;
     height: 40px;
     border: none;
@@ -124,13 +126,16 @@ body {
     color: #ffffff;
     height: 40px;
 }
-.queryfilterglobal .input_full{
+
+.queryfilterglobal .input_full {
     width: 100%;
 }
-.div_input_slide_bar{
+
+.div_input_slide_bar {
     margin-top: 15px;
 }
-.queryfilterglobal .input_slide_bar{
+
+.queryfilterglobal .input_slide_bar {
     text-align: center;
     border: none;
     outline: none;
@@ -139,11 +144,13 @@ body {
     margin-bottom: 10px;
     height: auto;
 }
-.queryfilterglobal .input_slide_bar:focus{
+
+.queryfilterglobal .input_slide_bar:focus {
     border-radius: 0;
     border-bottom: 2px solid #ffffff;
 }
-.queryfilterglobal .titre_sec_date{
+
+.queryfilterglobal .titre_sec_date {
     display: inline-block;
     width: 60px;
 }
@@ -160,21 +167,24 @@ body {
     margin-bottom: 30px;
     border-bottom: solid 2px #363c47;
 }
+
 .queryfilter li {
     position: relative;
 }
-.icon_cliquable_backspace{
+
+.icon_cliquable_backspace {
     cursor: pointer;
     color: red;
 }
-.position_inside{
+
+.position_inside {
     position: absolute;
     top: 32px;
     right: 20px;
 }
 
 
-    /*audio::-webkit-media-controls-play-button,*/
+/*audio::-webkit-media-controls-play-button,*/
 /*audio::-webkit-media-controls-panel {*/
 /*    background-color: var(--body-background-color);*/
 /*    color: var(--body-color);*/
@@ -209,11 +219,6 @@ audio::-webkit-media-controls-fullscreen-button {
     background: white;
     margin-top: 50px;
 }
-.dataTables_wrapper {
-    position:initial;
-    width: 75%;
-    margin-left: 20%;
-}
 
 .table_default thead {
     color: black;
@@ -230,7 +235,8 @@ audio::-webkit-media-controls-fullscreen-button {
     z-index: 999;
     vertical-align: middle;
 }
-.table_default th span{
+
+.table_default th span {
     padding: 5px;
     display: flex;
     flex-direction: column;
@@ -254,7 +260,7 @@ audio::-webkit-media-controls-fullscreen-button {
     margin-right: 200px;
 }
 
-.table_default tr:first-child td{
+.table_default tr:first-child td {
     padding-top: 40px;
 }
 
@@ -277,8 +283,27 @@ audio::-webkit-media-controls-fullscreen-button {
     padding-left: 15px;
 }
 
-.table_default .saveButton{
+.table_default .saveButton {
     cursor: pointer;
+}
+
+.dataTables_wrapper {
+    position: initial;
+    width: 75%;
+    margin-left: 21%;
+    padding-top: 40px;
+}
+
+.dataTables_length {
+    display: none;
+}
+
+.dataTables_filter {
+    display: none;
+}
+table.dataTable thead th, table.dataTable thead td {
+    padding: 12px;
+    border-bottom: 1px solid #111;
 }
 
 /*.rTable {
@@ -360,11 +385,12 @@ audio::-webkit-media-controls-fullscreen-button {
     border-bottom: 20px solid var(--body-background-color);
 }
 
-#cssmenu ul{
+#cssmenu ul {
     flex-direction: row;
     display: flex;
     margin-left: 60px;
 }
+
 #cssmenu ul li {
     height: 55px;
     display: flex;
@@ -372,14 +398,17 @@ audio::-webkit-media-controls-fullscreen-button {
     justify-content: center;
     margin: 0 15px;
 }
-#cssmenu ul li:hover{
+
+#cssmenu ul li:hover {
     border-bottom: 3px solid #3383bb;
 }
-#cssmenu ul li a{
+
+#cssmenu ul li a {
     text-decoration: none;
     color: #272A34;
 }
-#cssmenu ul li a:hover{
+
+#cssmenu ul li a:hover {
     color: #3383bb;
 }
 
@@ -389,30 +418,35 @@ audio::-webkit-media-controls-fullscreen-button {
     background: #ECECEC;
     border: none;
 }
-.slider{
+
+.slider {
     height: 6px;
 }
-    /* intérieur slide */
+
+/* intérieur slide */
 .ui-slider .ui-slider-range {
     background: #737373;
     border: none;
 }
+
 /* bouton slide */
 .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button, html .ui-button.ui-state-disabled:hover, html .ui-button.ui-state-disabled:active {
     background: #737373;
     border-radius: 50px;
     border: 1px solid #737373;
 }
+
 .ui-slider .ui-slider-handle {
     width: 1em;
     height: 1em;
 }
+
 .ui-slider-horizontal .ui-slider-handle {
     top: -.4em;
     cursor: pointer;
 }
 
-.button_download{
+.button_download {
     background-color: green;
     height: 55px;
     border: none;
@@ -425,25 +459,29 @@ audio::-webkit-media-controls-fullscreen-button {
     width: 200px;
     border-radius: 6px;
 }
-.download_icon{
+
+.download_icon {
     margin-right: 10px;
 }
 
 @media only screen and (max-width: 940px), (max-device-width: 940px) {
-    #cssmenu{
+    #cssmenu {
         margin-left: 0;
         width: 100%;
     }
+
     .contenu {
         flex-direction: column;
     }
-    .queryfilterglobal{
+
+    .queryfilterglobal {
         margin-top: 70px;
         position: initial;
         width: 100%;
         min-height: auto;
     }
-    .table_default{
+
+    .table_default {
         margin-top: 55px;
         margin-left: 0;
     }
