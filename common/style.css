@@ -406,13 +406,12 @@ audio::-webkit-media-controls-fullscreen-button {
 
 .button_download{
     background-color: green;
-    margin-left: 20px;
     height: 55px;
     border: none;
     color: #ffffff;
     position: fixed;
     z-index: 9999;
-    right: 50px;
+    right: 65px;
     top: 7px;
     cursor: pointer;
     width: 200px;
