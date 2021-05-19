@@ -122,10 +122,12 @@ body {
     border: 3px solid #363c47;
     border-radius: 5px;
     color: #ffffff;
-    height: 40px
+    height: 40px;
+    text-align: center;
 }
 .queryfilterglobal .input_full{
     width: 100%;
+    text-align: left;
 }
 
 .queryfilter_titre {
@@ -147,6 +149,7 @@ body {
     position: absolute;
     top: 32px;
     right: 20px;
+    cursor: pointer;
 }
 
     /*audio::-webkit-media-controls-play-button,*/
@@ -380,4 +383,24 @@ audio::-webkit-media-controls-fullscreen-button {
 }
 .ui-slider-horizontal .ui-slider-handle {
     top: -.4em;
+}
+
+@media only screen and (max-width: 940px), (max-device-width: 940px) {
+    #cssmenu{
+        margin-left: 0;
+        width: 100%;
+    }
+    .contenu {
+        flex-direction: column;
+    }
+    .queryfilterglobal{
+        margin-top: 70px;
+        position: initial;
+        width: 100%;
+        min-height: auto;
+    }
+    .table{
+        margin-top: 55px;
+        margin-left: 0;
+    }
 }
