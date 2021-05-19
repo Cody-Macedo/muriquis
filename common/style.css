@@ -82,7 +82,7 @@ body {
     height: 100%;
     position: fixed;
     width: 20%;
-    padding: 30px;
+    padding: 30px 30px 110px 30px;
     overflow-y: scroll;
     scrollbar-width: none; /* Firefox */
     -ms-overflow-style: none; /* Internet Explorer 10+ */
@@ -99,6 +99,10 @@ body {
     color: white;
     margin-bottom: 10px;
     cursor: pointer;
+
+    position: fixed;
+    bottom: 70px;
+    width: 245px;
 }
 
 .queryfilterglobal .button_clear {
@@ -110,6 +114,10 @@ body {
     color: white;
     margin-bottom: 10px;
     cursor: pointer;
+
+    position: fixed;
+    bottom: 20px;
+    width: 245px;
 }
 
 .queryfilterglobal::-webkit-scrollbar { /* WebKit */
