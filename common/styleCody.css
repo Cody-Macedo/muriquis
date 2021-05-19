@@ -1,0 +1,38 @@
+.login-container{
+    background: white;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px;
+    margin: 10rem auto 60px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background-color: #f6f6f6;
+    box-sizing: border-box;
+    margin-right: 60px;
+}
+
+button {
+    background-color: #239B56;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    font-size: medium;
+    width: 100%;
+}
+button[type=submit]{
+    margin-top: 20px;
+}
+
+.login-container-input label{
+    font-size: smaller;
+    color: #363c47;
+    font-weight: lighter;
+}
