@@ -123,11 +123,20 @@ body {
     border-radius: 5px;
     color: #ffffff;
     height: 40px;
-    text-align: center;
 }
 .queryfilterglobal .input_full{
     width: 100%;
-    text-align: left;
+}
+.queryfilterglobal .input_slide_bar{
+    text-align: center;
+    border: none;
+    outline: none;
+    margin-left: 5px;
+    margin-right: 20px;
+}
+.queryfilterglobal .input_slide_bar:focus{
+    border-radius: 0;
+    border-bottom: 2px solid #ffffff;
 }
 
 .queryfilter_titre {
@@ -383,6 +392,7 @@ audio::-webkit-media-controls-fullscreen-button {
 }
 .ui-slider-horizontal .ui-slider-handle {
     top: -.4em;
+    cursor: pointer;
 }
 
 @media only screen and (max-width: 940px), (max-device-width: 940px) {
