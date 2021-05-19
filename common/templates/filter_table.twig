@@ -23,9 +23,15 @@
                 </div>
             {% endif %}
         {% endfor %}
-        <input type="submit" value="Set filters"/>
+        <button type="submit" class="button_validate">
+            <i class="fas fa-cogs"></i> Set filters
+        </button>
     </form>
-    <form method="post"><input type="submit" value="Reset all filters"/></form>
+    <form method="post">
+        <button type="submit" class="button_clear">
+            <i class="fas fa-sync"></i> Reset all filters
+        </button>
+    </form>
 </div>
 
 
