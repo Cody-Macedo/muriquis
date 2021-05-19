@@ -1,9 +1,14 @@
 <div>
 	<span class="label">{{ meta.label }} :</span><br />
 	From&nbsp;<input size="5" autocomplete="off" data-rule-number="true" type="text" name="value[{{meta.id}}][0]" value="{{value[0]}}" id="{{meta.id}}_0"/>
+	<!--
 	<i class="fas fa-backspace" onclick="javascript:clear_elt('{{meta.id}}_0');"></i>
+	-->
+
 	To&nbsp;<input size="5" autocomplete="off" type="text" name="value[{{meta.id}}][1]" data-rule-number="true" value="{{value[1]}}" id="{{meta.id}}_1"/>
+	<!--
 	<i class="fas fa-backspace" onclick="javascript:clear_elt('{{meta.id}}_1');"></i>
+	-->
 </div>
 <div class="slider" id="slider-{{meta.id}}"></div> 
 <br clear="both">

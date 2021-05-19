@@ -125,7 +125,7 @@ body {
     height: 40px
 }
 .queryfilterglobal .input_full{
-    width: 90%;
+    width: 100%;
 }
 
 .queryfilter_titre {
@@ -138,10 +138,18 @@ body {
 .queryfilter {
     padding-bottom: 20px;
     margin-bottom: 30px;
-    border-bottom: solid 2px #fff;
+    border-bottom: solid 2px #363c47;
+}
+.queryfilter li {
+    position: relative;
+}
+.position_inside{
+    position: absolute;
+    top: 32px;
+    right: 20px;
 }
 
-/*audio::-webkit-media-controls-play-button,*/
+    /*audio::-webkit-media-controls-play-button,*/
 /*audio::-webkit-media-controls-panel {*/
 /*    background-color: var(--body-background-color);*/
 /*    color: var(--body-color);*/
@@ -336,7 +344,7 @@ audio::-webkit-media-controls-fullscreen-button {
     margin: 0 15px;
 }
 #cssmenu ul li:hover{
-    border-bottom: 3px solid #272A34;
+    border-bottom: 3px solid #3383bb;
 }
 #cssmenu ul li a{
     text-decoration: none;
