@@ -468,9 +468,23 @@ table.dataTable thead th, table.dataTable thead td {
     border-radius: 6px;
 }
 
+.iru-tiny-player .song-main-info .song-title{
+    display: none;
+}
+.iru-tiny-player {
+    width: 200px;
+    border: none !important;
+    display: flex;
+    justify-content: center;
+    color: #3383bb;
+    cursor: pointer;
+}
+
 .download_icon {
     margin-right: 10px;
 }
+
+
 
 @media only screen and (max-width: 940px), (max-device-width: 940px) {
     #cssmenu {
