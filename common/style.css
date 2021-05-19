@@ -314,16 +314,24 @@ audio::-webkit-media-controls-fullscreen-button {
     display: flex;
     margin-left: 60px;
 }
-#cssmenu ul li{
+#cssmenu ul li {
     height: 55px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: 0 15px;
 }
+#cssmenu ul li:hover{
+    border-bottom: 3px solid #272A34;
+}
 #cssmenu ul li a{
     text-decoration: none;
+    color: #272A34;
 }
+#cssmenu ul li a:hover{
+    color: #3383bb;
+}
+
 
 /* barre slide */
 .ui-widget.ui-widget-content {
