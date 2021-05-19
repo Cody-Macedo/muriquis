@@ -45,15 +45,13 @@ ABOUT
 */
 
 .image-about{
-    width: 30%;
+    width: 35%;
     height: auto;
     margin-right: 20px;
 }
 
-
-
 .about-container{
-    margin: 7% 20% 7%;
+    margin: 5% 20% 5%;
 }
 
 .about-container h1{
@@ -79,16 +77,20 @@ ABOUT
     align-items: center;
     /*border: 3px solid red;*/
     clear: both;
-    margin-bottom: 5%;
+    margin-bottom: 3%;
 }
 
 .block-paragraph{
     margin-bottom: 5%;
     /*border: 2px solid red;*/
 }
+
+.block-paragraph ul li{
+    margin-bottom: 1%;
+}
 .menu-about{
     text-align: center;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 .menu-about a{
     text-decoration: none;
