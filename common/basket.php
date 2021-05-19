@@ -1,3 +1,4 @@
+
 <?php
 $ajax = false;
 $need_auth = false;
@@ -45,3 +46,14 @@ while($row = $res->fetch_assoc()){
 
 echo $twig->render('index.twig', array("metas"=>$metas, "values"=>$values, "results"=>$data, "basket"=>true));
 ?>
+
+<style>
+    #cssmenu{
+        width: 100%;
+        margin-left: 0;
+    }
+    .table{
+        margin-left: 20px;
+    }
+
+</style>

@@ -8,3 +8,13 @@ $pid = (isset($_GET["pid"])?intval($_GET["pid"]):1);
 
 echo $twig->render('about.twig', array("pid"=>$pid));
 ?>
+<style>
+    #cssmenu{
+        width: 100%;
+        margin-left: 0;
+    }
+    .table{
+        margin-left: 20px;
+    }
+
+</style>
