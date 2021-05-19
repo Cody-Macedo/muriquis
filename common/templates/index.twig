@@ -6,7 +6,9 @@
 		$("#edit_form").validate();
 	</script>
 {% else %}
-	<a href='download_basket.php' target='_blank'>Download Basket</a>
+	<button onClick="parent.location='download_basket.php'" target="_blank">
+		Download Basket
+	</button>
 {% endif %}
 
 {% include 'record_table.twig' with {'data': data, 'metas':metas}%}

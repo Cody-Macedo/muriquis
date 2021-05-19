@@ -3,5 +3,5 @@
 $dbHost = "localhost";
 $dbUser = "root";
 $dbPassword = "";
-$dbName = "muriquis";
+$dbName = "muriqui";
 $port = 3306;
