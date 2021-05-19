@@ -127,12 +127,17 @@ body {
 .queryfilterglobal .input_full{
     width: 100%;
 }
+.div_input_slide_bar{
+    margin-top: 15px;
+}
 .queryfilterglobal .input_slide_bar{
     text-align: center;
     border: none;
     outline: none;
     margin-left: 5px;
     margin-right: 20px;
+    margin-bottom: 10px;
+    height: auto;
 }
 .queryfilterglobal .input_slide_bar:focus{
     border-radius: 0;
