@@ -1,9 +1,16 @@
 <div class="div_input_slide_bar">
-    <span class="label">{{ meta.label }} :</span>
-    <br />
-    <span class="titre_sec_date">From</span><input autocomplete="off" id="{{meta.id}}_0" class="dp" type="text" name="value[{{meta.id}}][0]" value="{{value[0]}}" size="8"/>&nbsp;
-    <i class="fas fa-backspace icon_cliquable_backspace" onclick="javascript:clear_elt('{{meta.id}}_1');"></i>
-    <br />
-    <span class="titre_sec_date">To</span><input autocomplete="off" id="{{meta.id}}_1" class="dp"  type="text" name="value[{{meta.id}}][1]" value="{{value[1]}}" size="8"/>&nbsp;
-    <i class="fas fa-backspace icon_cliquable_backspace" onclick="javascript:clear_elt('{{meta.id}}_1');"></i>
+    <p class="label">{{ meta.label }} :</p>
+
+    <p class="titre_sec_date">From</p>
+    <input autocomplete="off" id="{{ meta.id }}_0" class="dp" type="text"
+           name="value[{{ meta.id }}][0]" value="{{ value[0] }}" size="8"/>&nbsp;
+    {# <i class="fas fa-backspace icon_cliquable_backspace" onclick="javascript:clear_elt('{{ meta.id }}_0');"></i> #}
+
+
+    <p class="titre_sec_date">To</p>
+    <input autocomplete="off" id="{{ meta.id }}_1" class="dp" type="text"
+           name="value[{{ meta.id }}][1]" value="{{ value[1] }}" size="8"/>&nbsp;
+    <i class="fas fa-backspace icon_cliquable_backspace"
+       onclick="javascript:clear_elt('{{ meta.id }}_1'); javascript:clear_elt('{{ meta.id }}_0');"></i>
+
 </div>

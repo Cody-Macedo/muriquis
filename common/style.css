@@ -132,15 +132,21 @@ body {
     border: 3px solid #363c47;
     border-radius: 5px;
     color: #ffffff;
-    height: 40px;
+    height: 34px;
+}
+
+.queryfilterglobal .dp{
+    width: 76px;
 }
 
 .queryfilterglobal .input_full {
     width: 100%;
+    padding: 0px 20px;
 }
 
 .div_input_slide_bar {
     margin-top: 15px;
+    display: inline-block;
 }
 
 .queryfilterglobal .input_slide_bar {
@@ -160,7 +166,6 @@ body {
 
 .queryfilterglobal .titre_sec_date {
     display: inline-block;
-    width: 60px;
 }
 
 .queryfilter_titre {
@@ -187,9 +192,10 @@ body {
 
 .position_inside {
     position: absolute;
-    top: 32px;
+    top: 30px;
     right: 20px;
 }
+
 
 
 /*audio::-webkit-media-controls-play-button,*/
