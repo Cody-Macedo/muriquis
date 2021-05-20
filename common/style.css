@@ -329,6 +329,7 @@ audio::-webkit-media-controls-fullscreen-button {
     justify-content: center;
     height: 100%;
     font-size: 14px;
+    font-weight: normal;
 }
 
 .table_default tr td {
@@ -388,10 +389,12 @@ audio::-webkit-media-controls-fullscreen-button {
     display: none;
 }
 table.dataTable thead th, table.dataTable thead td {
-    padding: 12px;
+    padding: 14px;
     border-bottom: 1px solid #111;
 }
-
+table.dataTable thead th, table.dataTable tfoot th {
+    font-weight: normal;
+}
 /*.rTable {
     display: flex;
     flex-direction: column;
