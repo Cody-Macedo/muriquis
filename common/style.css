@@ -389,7 +389,7 @@ audio::-webkit-media-controls-fullscreen-button {
     display: none;
 }
 table.dataTable thead th, table.dataTable thead td {
-    padding: 14px;
+    padding: 12px;
     border-bottom: 1px solid #111;
 }
 table.dataTable thead th, table.dataTable tfoot th {
