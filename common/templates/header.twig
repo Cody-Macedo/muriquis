@@ -1,87 +1,89 @@
 <html>
 <head>
-<title></title>
+    <title></title>
 
-<!-- jquery table css -->
-<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
+    <!-- jquery table css -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.24/css/jquery.dataTables.css">
 
+    <link rel="stylesheet" type="text/css" href="./common/jquery-ui-1.12.1/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="color_local.css">
+    <link rel="stylesheet" type="text/css" href="./common/style.css">
+    <link rel="stylesheet" type="text/css" href="./common/styleCody.css">
+    <link rel="icon" type="image/png" href="img/favicon.png"/>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+          integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!-- jquery audio css -->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css"
+          href="https://www.jqueryscript.net/demo/Cross-Platform-Audio-Player-tinyPlayer/src/css/tinyPlayer.css">
 
+    <script src="./common/jquery-3.3.1.min.js"></script>
 
-<link rel="stylesheet" type="text/css" href="./common/jquery-ui-1.12.1/jquery-ui.min.css">
-<link rel="stylesheet" type="text/css" href="color_local.css">
-<link rel="stylesheet" type="text/css" href="./common/style.css">
-<link rel="stylesheet" type="text/css" href="./common/styleCody.css">
-<link rel="icon" type="image/png" href="img/favicon.png" />
-<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-		  integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-<!-- jquery audio css -->
-<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" type="text/css" href="https://www.jqueryscript.net/demo/Cross-Platform-Audio-Player-tinyPlayer/src/css/tinyPlayer.css">
+    <!-- jquery table js -->
+    <script type="text/javascript" charset="utf8"
+            src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
 
+    <!-- jquery audio js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.13/howler.min.js"></script>
+    <script src="https://www.jqueryscript.net/demo/Cross-Platform-Audio-Player-tinyPlayer/src/js/tinyPlayer.js"></script>
 
-
-
-<script src="./common/jquery-3.3.1.min.js"></script>
-
-<!-- jquery table js -->
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.js"></script>
-
-<!-- jquery audio js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.13/howler.min.js"></script>
-<script src="https://www.jqueryscript.net/demo/Cross-Platform-Audio-Player-tinyPlayer/src/js/tinyPlayer.js"></script>
-
-<script src="./common/jquery-ui-1.12.1/jquery-ui.min.js"></script>
-<!--script src="jquery-validation-1.17.0/additional-methods.min.js"></script-->
-<script src="./common/jquery-validation-1.17.0/jquery.validate.min.js"></script>
+    <script src="./common/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+    <!--script src="jquery-validation-1.17.0/additional-methods.min.js"></script-->
+    <script src="./common/jquery-validation-1.17.0/jquery.validate.min.js"></script>
 
 </head>
 <body>
 
 {% if want_menu == true %}
-<div id='cssmenu'>
-	<ul>
-		<li><a href='index.php'><span>Home</span></a></li>
-		<li><a href='basket.php'><span>Basket</span></a></li>
-		<li><a href='about.php'><span>About</span></a></li>
-	{% if user_id != -1 %}
-		<li class='has-sub' id="has-sub"><a href='#'><span>Database Management</span></a>
-		  <ul>
-				<li><a href='manage_meta.php?table=record'><span>Records</span></a></li>
-				<li><a href='manage_meta.php?table=production'><span>Productions</span></a></li>
-				<li><a href='manage_meta.php?table=speaker'><span>Speakers</span></a></li>
-				<li><a href='remake_db.php'><span>Recalculate database</span></a></li>
-		  </ul>
-	   </li>
-	   <li><a href='edit.php'><span>Add element</span></a></li>
-	   <li class='last'><a href='login.php?logout=1'><span>Logout</span></a></li>
-	
-	</script>
-	{% else %}
-		<li><a href='login.php'><span>Admin</span></a></li>
-	{% endif %}		
-	</ul>
-	{% if submenu is defined and submenu != ""%}
-		{{submenu|raw}}
-	{% endif %}
-	
-	</div>
-	<script type="text/javascript">
-		/*( function( $ ) {
-		$( document ).ready(function() {
-		$('#cssmenu').prepend('<div id="menu-button">Menu</div>');
-			$('#cssmenu #menu-button').on('click', function(){
-				var menu = $(this).next('ul');
-				if (menu.hasClass('open')) {
-					menu.removeClass('open');
-				}
-				else {
-					menu.addClass('open');
-				}
-			});
-		});
-		} )( jQuery );
-		 */
+    <div id='cssmenu'>
+        <ul>
+            <li><a href='index.php'><span>Home</span></a></li>
+            <li><a href='basket.php'><span>Basket</span></a></li>
+            <li><a href='about.php'><span>About</span></a></li>
+            {% if user_id != -1 %}
 
-	</script>
+                <div class="dropdown">
+                    <li class="dropbtn">
+                        <div>Database Management <i class="fas fa-sort-down"></i></div>
+                    </li>
+                    <div class="dropdown-content">
+                        <li><a href='manage_meta.php?table=record'><span>Records</span></a></li>
+                        <li><a href='manage_meta.php?table=production'><span>Productions</span></a></li>
+                        <li><a href='manage_meta.php?table=speaker'><span>Speakers</span></a></li>
+                        <li><a href='remake_db.php'><span>Recalculate database</span></a></li>
+                    </div>
+                </div>
+
+                <li><a href='edit.php'><span>Add element</span></a></li>
+                <li class='last'><a href='login.php?logout=1'><span>Logout <i class="fas fa-power-off"></i></span> </a>
+                </li>
+
+            {% else %}
+                <li><a href='login.php'><span>Admin</span></a></li>
+            {% endif %}
+        </ul>
+        {% if submenu is defined and submenu != "" %}
+            {{ submenu|raw }}
+        {% endif %}
+
+    </div>
+    <script type="text/javascript">
+        /*( function( $ ) {
+        $( document ).ready(function() {
+        $('#cssmenu').prepend('<div id="menu-button">Menu</div>');
+            $('#cssmenu #menu-button').on('click', function(){
+                var menu = $(this).next('ul');
+                if (menu.hasClass('open')) {
+                    menu.removeClass('open');
+                }
+                else {
+                    menu.addClass('open');
+                }
+            });
+        });
+        } )( jQuery );
+         */
+
+    </script>
 {% endif %}
 <div id="main" class="contenu">

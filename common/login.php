@@ -1,6 +1,6 @@
 <?php
 $need_auth = false;
-$want_menu = false;
+$want_menu = true;
 require_once("./common/init.php");
 
 $act = (isset($_POST["act"])?$_POST["act"]:Null);
@@ -27,3 +27,15 @@ if($logout != -1){
 echo $twig->render('login.twig');
 
 ?>
+
+<style>
+    #cssmenu{
+        width: 100%;
+        margin-left: 0;
+    }
+    .table_default{
+        margin-left: 20px;
+    }
+
+
+</style>

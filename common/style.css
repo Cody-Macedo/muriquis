@@ -240,7 +240,7 @@ audio::-webkit-media-controls-fullscreen-button {
     position: sticky;
     top: 70px;
     background: white;
-    z-index: 999;
+    z-index: 500;
     vertical-align: middle;
 }
 
