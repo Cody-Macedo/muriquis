@@ -1,11 +1,11 @@
 <div class="div_input_slide_bar">
 	<span class="label">{{ meta.label }} :</span><br />
-	From&nbsp;<input class="input_slide_bar" size="5" autocomplete="off" data-rule-number="true" type="text" name="value[{{meta.id}}][0]" value="{% if value[0] != "" %}{{value[0]}}{% else %}{{ meta.minval }}{% endif %}" id="{{meta.id}}_0"/>
+	<span class="sous_titre_input">From&nbsp;</span><input class="input_slide_bar" size="5" autocomplete="off" data-rule-number="true" type="text" name="value[{{meta.id}}][0]" value="{% if value[0] != "" %}{{value[0]}}{% else %}{{ meta.minval }}{% endif %}" id="{{meta.id}}_0"/>
 	<!--
 	<i class="fas fa-backspace" onclick="javascript:clear_elt('{{meta.id}}_0');"></i>
 	-->
 
-	To&nbsp;<input class="input_slide_bar" size="5" autocomplete="off" type="text" name="value[{{meta.id}}][1]" data-rule-number="true" value="{% if value[1] != "" %}{{value[1]}}{% else %}{{ meta.maxval }}{% endif %}" id="{{meta.id}}_1"/>
+	<span class="sous_titre_input">To&nbsp;</span><input class="input_slide_bar" size="5" autocomplete="off" type="text" name="value[{{meta.id}}][1]" data-rule-number="true" value="{% if value[1] != "" %}{{value[1]}}{% else %}{{ meta.maxval }}{% endif %}" id="{{meta.id}}_1"/>
 	<!--
 	<i class="fas fa-backspace" onclick="javascript:clear_elt('{{meta.id}}_1');"></i>
 	-->

@@ -2,7 +2,7 @@
     <form id="edit_form" method="post">
         {% for key, data in metas %}
             {% if data|length > 0 %}
-                <div class="queryfilter_titre"><i class="fas fa-caret-right"></i>&nbsp;Table {{ key }}</div><br />
+                <div class="queryfilter_titre">Table {{ key }}</div><br />
                 <div class="queryfilter accordeon_{{ key }}" id="filter_div_{{ key }}">
                     <ul>
                         {% for meta in data %}

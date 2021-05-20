@@ -59,7 +59,6 @@ table {
 
 body {
     color: var(--body-color);
-    font-weight: bold;
     background-color: var(--body-background-color);
     font-family: 'Noto Sans KR', sans-serif;
 }
@@ -82,13 +81,64 @@ body {
     height: 100%;
     position: fixed;
     width: 20%;
-    padding: 30px 30px 110px 30px;
+    padding: 25px 25px 110px 25px;
     overflow-y: scroll;
-    scrollbar-width: none; /* Firefox */
-    -ms-overflow-style: none; /* Internet Explorer 10+ */
     font-size: 14px;
-    color: #c1beba;
+    color: #ffffff;
 }
+
+/* scroll bar body */
+/* width */
+body::-webkit-scrollbar {
+    width: 15px;
+    cursor: pointer;
+}
+
+/* Track */
+body::-webkit-scrollbar-track {
+    background: var(--body-background-color);
+    cursor: pointer;
+}
+
+/* Handle */
+body::-webkit-scrollbar-thumb {
+    background: #9a9b9b;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+/* Handle on hover */
+body::-webkit-scrollbar-thumb:hover {
+    background: #658b56;
+    cursor: pointer;
+}
+
+
+
+
+/* width */
+.queryfilterglobal::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+    cursor: pointer;
+}
+
+/* Track */
+.queryfilterglobal::-webkit-scrollbar-track {
+    background: #272a34;
+}
+
+/* Handle */
+.queryfilterglobal::-webkit-scrollbar-thumb {
+    background: #9a9b9b;
+    border-radius: 50px;
+}
+
+/* Handle on hover */
+.queryfilterglobal::-webkit-scrollbar-thumb:hover {
+    background: #658b56;
+}
+
 
 .queryfilterglobal .button_validate {
     width: 100%;
@@ -99,7 +149,6 @@ body {
     color: white;
     margin-bottom: 10px;
     cursor: pointer;
-
     position: fixed;
     bottom: 70px;
     width: 245px;
@@ -114,15 +163,14 @@ body {
     color: white;
     margin-bottom: 10px;
     cursor: pointer;
-
     position: fixed;
     bottom: 20px;
     width: 245px;
 }
 
-.queryfilterglobal::-webkit-scrollbar { /* WebKit */
-    width: 0;
-    height: 0;
+
+.queryfilterglobal .fa-times-circle{
+    color: #9a9b9b;
 }
 
 .queryfilterglobal input {
@@ -148,6 +196,9 @@ body {
     margin-top: 15px;
     display: inline-block;
 }
+.queryfilterglobal .sous_titre_input{
+     color: #9a9b9b;
+}
 
 .queryfilterglobal .input_slide_bar {
     text-align: center;
@@ -166,12 +217,12 @@ body {
 
 .queryfilterglobal .titre_sec_date {
     display: inline-block;
+    color: #9a9b9b;
 }
 
 .queryfilter_titre {
     font-size: 20px;
     padding-bottom: 5px;
-    font-weight: 600;
     color: #75bf48;
 }
 
@@ -513,17 +564,6 @@ li .last {
     border-radius: 6px;
 }
 
-.iru-tiny-player .song-main-info .song-title{
-    display: none;
-}
-.iru-tiny-player {
-    width: 200px;
-    border: none !important;
-    display: flex;
-    justify-content: center;
-    color: #3383bb;
-    cursor: pointer;
-}
 
 .download_icon {
     margin-right: 10px;
