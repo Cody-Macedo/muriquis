@@ -46,6 +46,11 @@ while($row = $res->fetch_assoc()){
 
 echo $twig->render('index.twig', array("metas"=>$metas, "values"=>$values, "results"=>$data, "basket"=>true));
 ?>
+<script>
+    $('.deleteselect').click(function() {
+        location.reload();
+    });
+</script>
 
 <style>
     #cssmenu{

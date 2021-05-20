@@ -1,11 +1,11 @@
 <tr>
     <td>
         <div class="saveButton">
-            <img id="b_{{ data[0]["record_id"] }}_add" class="action_icon" width="30" height="30"
-                 onclick="add_to_basket({{ data[0]["record_id"] }})" src="img/save-solid.svg"
+            <img id="b_{{ data[0]["record_id"] }}_add" class="action_icon" width="20" height="20"
+                 onclick="add_to_basket({{ data[0]["record_id"] }})" src="img/square-regular.svg"
                  {% if data[0]["in_basket"] %}style='display:none'{% endif %}/>
-            <img id="b_{{ data[0]["record_id"] }}_rem" class="action_icon" width="30" height="30"
-                 onclick="javascript:rem_from_basket({{ data[0]["record_id"] }})" src="img/times-square-regular.svg"
+            <img id="b_{{ data[0]["record_id"] }}_rem" class="action_icon deleteselect" width="20" height="20"
+                 onclick="javascript:rem_from_basket({{ data[0]["record_id"] }});" src="img/check-square-regular.svg"
                  {% if not data[0]["in_basket"] %}style='display:none'{% endif %}/>
         </div>
     </td>
