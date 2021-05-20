@@ -136,7 +136,7 @@ body {
 }
 
 .queryfilterglobal .dp{
-    width: 76px;
+    width: 75px;
 }
 
 .queryfilterglobal .input_full {
@@ -426,10 +426,50 @@ table.dataTable thead th, table.dataTable thead td {
     color: #3383bb;
 }
 
+/*
+ DROPDOWN
+ */
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 500;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropbtn {
+    cursor: pointer;
+}
+
+.dropbtn .fa-sort-down {
+    margin-left: 4px;
+}
+
+li .last {
+    color: #ca4242;
+}
+
+.editMeta{
+    margin-top: 10%;
+}
+
 
 /* barre slide */
 .ui-widget.ui-widget-content {
-    background: #a4a4a4;
+    background: #ECECEC;
     border: none;
 }
 
@@ -513,3 +553,125 @@ table.dataTable thead th, table.dataTable thead td {
         margin-left: 0;
     }
 }
+/*
+LOGIN
+*/
+
+.login-container {
+    background: white;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 40px;
+    margin: 10rem auto 60px;
+}
+
+.login-container input {
+    width: 100%;
+    padding: 12px 20px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    background-color: #f6f6f6;
+    box-sizing: border-box;
+    margin: 8px 60px 8px 0;
+}
+
+.login-container button {
+    background-color: #239B56;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    font-size: medium;
+    width: 100%;
+}
+
+.login-container button[type=submit] {
+    margin-top: 20px;
+}
+
+.login-container-input label {
+    font-size: smaller;
+    color: #363c47;
+    font-weight: lighter;
+}
+
+/*
+ABOUT
+*/
+
+.image-about {
+    width: 35%;
+    height: auto;
+    margin-right: 20px;
+}
+
+.about-container {
+    margin: 5% 20% 5%;
+}
+
+.about-container h1 {
+    font-weight: lighter;
+    font-size: xx-large;
+    margin-bottom: 20px;
+}
+
+.about-container h2 {
+    font-weight: lighter;
+    font-size: x-large;
+    margin-bottom: 20px;
+}
+
+.about-container p {
+    font-weight: lighter;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+    line-height: 1.7em;
+}
+
+.block-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*border: 3px solid red;*/
+    clear: both;
+    margin-bottom: 3%;
+}
+
+.block-paragraph {
+    margin-bottom: 5%;
+    /*border: 2px solid red;*/
+}
+
+.block-paragraph ul li {
+    margin-bottom: 1%;
+}
+
+.menu-about {
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+.menu-about a {
+    text-decoration: none;
+    color: white;
+}
+
+.menu-about a button {
+    background-color: #239B56;
+    border: 2px solid #239B56;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 8px;
+    cursor: pointer;
+    font-size: medium;
+    transition: 0.3s;
+    border-radius: 3px;
+}
+
+.menu-about a button:hover {
+    background-color: transparent;
+    border: 2px solid #239B56;
+    color: black;
+}
+
