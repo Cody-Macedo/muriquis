@@ -403,6 +403,7 @@ table.dataTable {
     display: flex;
     flex-direction: column;
     align-items: center;
+    background-color: var(--body-background-color);
 }
 
 .dataTables_length {
@@ -781,32 +782,4 @@ ABOUT
 .menu-about a button:hover {
     background-color: transparent;
     color: black;
-}
-
-@media only screen and (max-width: 940px), (max-device-width: 940px) {
-    #cssmenu {
-        margin-left: 0;
-        width: 100%;
-    }
-
-
-    .contenu {
-        flex-direction: column;
-    }
-
-    .queryfilterglobal {
-        margin-top: 70px;
-        position: initial;
-        width: 100%;
-        min-height: auto;
-    }
-    .div_btn_filter_fixed1, .div_btn_filter_fixed2{
-        position: initial !important;
-        width: 100% !important;
-    }
-
-    .table_default {
-        margin-top: 55px;
-        margin-left: 0;
-    }
 }
