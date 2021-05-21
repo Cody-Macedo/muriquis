@@ -61,10 +61,12 @@ echo $twig->render('index.twig', array("metas"=>$metas, "values"=>$values, "resu
         margin-left: 20px;
         margin-top: 80px;
     }
-    .dataTables_wrapper {
-        width: 98%;
-        margin-left: 0;
-        margin: auto;
+    .loadertable {
+        width: 100%;
+        margin: 0;
+    }
+    table.dataTable {
+        width: 95%;
     }
 
 </style>

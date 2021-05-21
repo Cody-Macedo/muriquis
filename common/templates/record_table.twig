@@ -1,32 +1,35 @@
-<table class="table_default display" id="tableapp">
-    <thead>
-    <tr>
-        <th></th>
-        {% for data in metas["record"] %}
-            <th><span class="header">{{ data["label"] }}</span></th>
-        {% endfor %}
-        {% for data in metas["production"] %}
-            <th><span class="header">{{ data["label"] }}</span></th>
-        {% endfor %}
-        <th><span class="header">1</span></th>
-        {% for data in metas["speaker"] %}
-            <th><span class="header">{{ data["label"] }}</span></th>
-        {% endfor %}
-        <th>Audio</th>
-    </tr>
-    </thead>
-    <tbody>
-    {% for data in results %}
-            {% include 'one_record.twig' with {'data': data, 'metas':metas} %}
-    {% endfor %}
-    </tbody>
-</table>
+<div class="loadertable">
+    <table class="table_default display" id="tableapp">
+            <thead>
+            <tr>
+                <th></th>
+                {% for data in metas["record"] %}
+                    <th><span class="header">{{ data["label"] }}</span></th>
+                {% endfor %}
+                {% for data in metas["production"] %}
+                    <th><span class="header">{{ data["label"] }}</span></th>
+                {% endfor %}
+                <th><span class="header">1</span></th>
+                {% for data in metas["speaker"] %}
+                    <th><span class="header">{{ data["label"] }}</span></th>
+                {% endfor %}
+                <th>Audio</th>
+            </tr>
+            </thead>
+            <tbody>
+            {% for data in results %}
+                    {% include 'one_record.twig' with {'data': data, 'metas':metas} %}
+            {% endfor %}
+            </tbody>
+    </table>
+</div>
 <script>
     $(document).ready( function () {
         $('#tableapp').DataTable( {
             paging: false,
             responsive: true,
         } );
+
     } );
 </script>
 
