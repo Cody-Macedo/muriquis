@@ -151,7 +151,7 @@ select {
     height: 100%;
     position: fixed;
     width: 20%;
-    padding: 25px 25px 110px 25px;
+    padding: 22px 22px 110px 22px;
     overflow-y: scroll;
     font-size: 14px;
     color: #ffffff;
@@ -246,8 +246,8 @@ body::-webkit-scrollbar-thumb:hover {
     text-align: center;
     width: calc(20% - 8px);
     height: 85px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 22px;
+    padding-right: 22px;
     border-top: solid 2px #363c47;
     padding-top: 20px;
 }
@@ -260,8 +260,8 @@ body::-webkit-scrollbar-thumb:hover {
     text-align: center;
     width: calc(20% - 8px);
     height: 60px;
-    padding-left: 25px;
-    padding-right: 25px;
+    padding-left: 22px;
+    padding-right: 22px;
 }
 
 .queryfilterglobal .fa-times-circle {
