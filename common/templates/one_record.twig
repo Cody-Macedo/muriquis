@@ -2,10 +2,10 @@
     <td>
         <div class="saveButton">
             <img id="b_{{ data[0]["record_id"] }}_add" class="action_icon" width="20" height="20"
-                 onclick="add_to_basket({{ data[0]["record_id"] }})" src="img/square-regular.svg"
+                 onclick="add_to_basket({{ data[0]["record_id"] }})" src="img/unchecked_black.svg"
                  {% if data[0]["in_basket"] %}style='display:none'{% endif %}/>
             <img id="b_{{ data[0]["record_id"] }}_rem" class="action_icon deleteselect" width="20" height="20"
-                 onclick="javascript:rem_from_basket({{ data[0]["record_id"] }});" src="img/check-square-regular.svg"
+                 onclick="javascript:rem_from_basket({{ data[0]["record_id"] }});" src="img/checked_black.svg"
                  {% if not data[0]["in_basket"] %}style='display:none'{% endif %}/>
         </div>
     </td>
@@ -39,7 +39,7 @@
         </td>
     {% endfor %}
     <td>
-        <audio class="iru-tiny-player" controls preload="none">
+        <audio class="audio_element" controls preload="none">
             <source src="./files/{{ data[0]["filename"] }}" type="audio/wav">
             Your browser does not support the audio element.
         </audio>

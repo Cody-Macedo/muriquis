@@ -471,7 +471,7 @@ table.dataTable {
     flex-direction: column;
     align-items: center;
     margin-left: 20%;
-    background: url("../img/loading.gif") no-repeat top center var(--body-background-color);
+    background: url("../img/loading_black.gif") no-repeat top center var(--body-background-color);
     background-size: 80px 80px;
     background-position-y: 50vh;
 }
