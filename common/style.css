@@ -161,7 +161,7 @@ select {
 /* scroll bar body */
 /* width */
 body::-webkit-scrollbar {
-    width: 15px;
+    width: 8px;
     cursor: pointer;
 }
 
