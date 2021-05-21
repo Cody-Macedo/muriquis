@@ -13,11 +13,17 @@
 
 {% include 'record_table.twig' with {'data': data, 'metas':metas}%}
 
+<style>
+	#cssmenu{
+		width: 80%;
+		margin-left: 20%;
+	}
+</style>
 <script type="text/javascript">
 	$("#edit_form").validate();
 	function add_to_basket(rid){
 		$.ajax
-		    ({ 
+		    ({
 		        url: 'add_to_basket.php',
 		        data: "rid="+rid+"&act=add",
 		        type: 'post',
@@ -30,7 +36,7 @@
 	}
 	function rem_from_basket(rid){
 		$.ajax
-		    ({ 
+		    ({
 		        url: 'add_to_basket.php',
 		        data: "rid="+rid+"&act=rem",
 		        type: 'post',

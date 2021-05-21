@@ -1,7 +1,13 @@
 :root {
-  --body-color: #000000;
+  --body-color: #red;
   --body-background-color: #f4f4f4;
-  
+  --body-primary-color: #75bf48;
+  --body-secondary-color: #658b56;
+  /*--body-primary-color: #3498DB;*/
+
+  --body-danger-color: #ea6657;
+  --body-danger-hover-color: #d0564a;
+
   --menu-text-color: #bbb8d3;
   --menu-text-inverse-color: #000000;
   --menu-bg-color: #ffffff;
