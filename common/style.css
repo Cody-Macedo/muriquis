@@ -112,10 +112,10 @@ style form input button
     cursor: pointer;
     font-size: medium;
     width: 100%;
-    margin:40px 0 8px;
+    margin: 40px 0 8px;
 }
 
-.text-important{
+.text-important {
     color: #75bf48;
 }
 
@@ -129,11 +129,13 @@ style form input button
     overflow: hidden;
     border-radius: .25em;
 }
+
 select {
     flex: 1;
     padding: 0 .5em;
     cursor: pointer;
 }
+
 /* Arrow */
 .select::after {
     content: '\25BC';
@@ -186,7 +188,7 @@ body::-webkit-scrollbar-thumb {
     background: #9a9b9b;
     border-radius: calc(15px / 2);
     cursor: pointer;
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
 }
 
 /* Handle on hover */
@@ -194,8 +196,6 @@ body::-webkit-scrollbar-thumb:hover {
     background: #658b56;
     cursor: pointer;
 }
-
-
 
 
 /* width */
@@ -213,7 +213,7 @@ body::-webkit-scrollbar-thumb:hover {
 .queryfilterglobal::-webkit-scrollbar-thumb {
     background: #9a9b9b;
     border-radius: calc(15px / 2);
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
 
 }
 
@@ -242,7 +242,8 @@ body::-webkit-scrollbar-thumb:hover {
     color: white;
     cursor: pointer;
 }
-.queryfilterglobal .div_btn_filter_fixed1{
+
+.queryfilterglobal .div_btn_filter_fixed1 {
     position: fixed;
     bottom: 60px;
     background-color: #272a34;
@@ -255,7 +256,8 @@ body::-webkit-scrollbar-thumb:hover {
     border-top: solid 2px #363c47;
     padding-top: 20px;
 }
-.queryfilterglobal .div_btn_filter_fixed2{
+
+.queryfilterglobal .div_btn_filter_fixed2 {
     position: fixed;
     bottom: 0;
     background-color: #272a34;
@@ -267,7 +269,7 @@ body::-webkit-scrollbar-thumb:hover {
     padding-right: 25px;
 }
 
-.queryfilterglobal .fa-times-circle{
+.queryfilterglobal .fa-times-circle {
     color: #9a9b9b;
 }
 
@@ -281,8 +283,8 @@ body::-webkit-scrollbar-thumb:hover {
     height: 34px;
 }
 
-.queryfilterglobal .dp{
-    width: 75px;
+.queryfilterglobal .dp {
+    width: 72px;
 }
 
 .queryfilterglobal .input_full {
@@ -291,13 +293,13 @@ body::-webkit-scrollbar-thumb:hover {
 }
 
 
-
 .div_input_slide_bar {
     margin-top: 15px;
     display: inline-block;
 }
-.queryfilterglobal .sous_titre_input{
-     color: #9a9b9b;
+
+.queryfilterglobal .sous_titre_input {
+    color: #9a9b9b;
 }
 
 .queryfilterglobal .input_slide_bar {
@@ -309,11 +311,13 @@ body::-webkit-scrollbar-thumb:hover {
     margin-bottom: 10px;
     height: auto;
 }
-.queryfilterglobal .input_full:focus, .queryfilterglobal .dp:focus{
+
+.queryfilterglobal .input_full:focus, .queryfilterglobal .dp:focus {
     outline: none;
     background-color: #313541;
 
 }
+
 .queryfilterglobal .input_slide_bar:focus {
     border-radius: 0;
     border-bottom: 2px solid #ffffff;
@@ -348,9 +352,8 @@ body::-webkit-scrollbar-thumb:hover {
 .position_inside {
     position: absolute;
     top: 30px;
-    right: 20px;
+    right: 11px;
 }
-
 
 
 /*audio::-webkit-media-controls-play-button,*/
@@ -457,6 +460,7 @@ audio::-webkit-media-controls-fullscreen-button {
 .table_default .saveButton {
     cursor: pointer;
 }
+
 table.dataTable {
     width: 75%;
     margin: 0;
@@ -464,7 +468,8 @@ table.dataTable {
     border-collapse: separate;
     border-spacing: 0;
 }
-.loadertable{
+
+.loadertable {
     padding-top: 40px;
     width: 100%;
     display: flex;
@@ -475,9 +480,11 @@ table.dataTable {
     background-size: 80px 80px;
     background-position-y: 50vh;
 }
-.dataTables_wrapper .table_default{
+
+.dataTables_wrapper .table_default {
     visibility: visible;
 }
+
 .dataTables_wrapper {
     width: 100%;
     display: flex;
@@ -493,13 +500,16 @@ table.dataTable {
 .dataTables_filter {
     display: none;
 }
+
 table.dataTable thead th, table.dataTable thead td {
     padding: 10px;
     border-bottom: 1px solid #111;
 }
+
 table.dataTable thead th, table.dataTable tfoot th {
     font-weight: normal;
 }
+
 /*.rTable {
     display: flex;
     flex-direction: column;
@@ -696,8 +706,6 @@ li .last {
 }
 
 
-
-
 /*
 FORM
  */
@@ -736,10 +744,10 @@ FORM
     cursor: pointer;
     font-size: medium;
     width: 100%;
-    margin:40px 0 8px;
+    margin: 40px 0 8px;
 }
 
-.text-important{
+.text-important {
     color: #75bf48;
 }
 
@@ -753,11 +761,13 @@ FORM
     overflow: hidden;
     border-radius: .25em;
 }
+
 select {
     flex: 1;
     padding: 0 .5em;
     cursor: pointer;
 }
+
 /* Arrow */
 .select::after {
     content: '\25BC';
@@ -769,6 +779,7 @@ select {
     pointer-events: none;
 
 }
+
 /* Transition */
 .select:hover::after {
     color: #75bf48;
@@ -777,10 +788,10 @@ select {
 .rTable {
     margin-top: 10px;
 }
+
 /*
 LOGIN
 */
-
 
 
 .login-container button[type=submit] {
