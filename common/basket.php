@@ -53,6 +53,7 @@ echo $twig->render('index.twig', array("metas"=>$metas, "values"=>$values, "resu
 </script>
 
 <style>
+    /* Full width style */
     #cssmenu{
         width: 100%;
         margin-left: 0;

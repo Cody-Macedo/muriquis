@@ -9,6 +9,7 @@ $pid = (isset($_GET["pid"])?intval($_GET["pid"]):1);
 echo $twig->render('about.twig', array("pid"=>$pid));
 ?>
 <style>
+    /* Full width style */
     #cssmenu{
         width: 100%;
         margin-left: 0;
@@ -16,6 +17,4 @@ echo $twig->render('about.twig', array("pid"=>$pid));
     .table_default{
         margin-left: 20px;
     }
-
-
 </style>
