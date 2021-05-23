@@ -152,11 +152,11 @@ body::-webkit-scrollbar-thumb {
     cursor: pointer;
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
 }
-/* Handle on hover */
+/* Handle on hover
 body::-webkit-scrollbar-thumb:hover {
     background: var(--senary-color);
     cursor: pointer;
-}
+}*/
 
 /****** MENU *******/
 #cssmenu {
@@ -249,10 +249,10 @@ body::-webkit-scrollbar-thumb:hover {
     border-radius: calc(15px / 2);
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
 }
-/* Handle on hover */
+/* Handle on hover
 .queryfilterglobal::-webkit-scrollbar-thumb:hover {
     background: var(--senary-color);
-}
+} */
 
 /* Filter */
 .queryfilterglobal {
