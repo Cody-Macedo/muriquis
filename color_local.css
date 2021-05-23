@@ -1,28 +1,53 @@
 :root {
-  --body-color: #red;
-  --body-background-color: #f4f4f4;
-  --body-primary-color: #75bf48;
-  --body-secondary-color: #658b56;
-  /*--body-primary-color: #3498DB;*/
+  /* Palette de Couleurs */
+  --primary-color: #75bf48;
+  --secondary-color:#272a34;
+  --tertiary-color: #d0564a;
+  --quaternary-color: #ffffff;
+  --quinary-color: #f4f4f4;
+  --senary-color: #658b56;
+  --septenary-color: #9a9b9b;
+  --octonary-color: #313541;
 
-  --body-danger-color: #ea6657;
-  --body-danger-hover-color: #d0564a;
+  /* Body */
+  --body-color: var(--secondary-color);
+  --body-background-color: var(--quinary-color);
 
-  --menu-text-color: #bbb8d3;
-  --menu-text-inverse-color: #000000;
-  --menu-bg-color: #ffffff;
-  --menu-bg-hover-color: #4cb6ea;
-  --menu-open-border-top-color : rgba(110, 110, 110, 0.25);
-  
-  --table-odd-background-color: #ffffff;
-  --table-odd-color: #000000;
-  --table-even-background-color: #ffffff;
-  --table-even-color: #000000;
-  --table-hover-background-color: #999999;
-  --table-hover-color: #000000;
-  
-  --table-cell-border-color: #999999;
-  
-  --table-header-color: #000000;
-  --table-header-background-color: #ffffff;
+  /* Menu */
+  --menu-link-txt-color: var(--secondary-color);
+  --menu-link-txt-hover-color: var(--primary-color);
+  --menu-link-hover-border-color: var(--primary-color);
+  --menu-bg-color: var(--quaternary-color);
+  --menu-border-bottom-color : var(--quinary-color);
+  --menu-btn-download-color: var(--primary-color);
+  --menu-btn-txt-color: var(--quaternary-color);
+
+  /* Filter */
+  --filter-txt-title1-color: var(--primary-color);
+  --filter-txt-title2-color: var(--quaternary-color);
+  --filter-txt-title3-color: var(--septenary-color);
+  --filter-txt-color: var(--quaternary-color);
+  --filter-bg-color: var(--secondary-color);
+  --filter-bg-input-border-color: var(--septenary-color);
+  --filter-bg-input-focus-color: var(--octonary-color);
+  --filter-slidebar-inside-color: var(--primary-color);
+  --filter-slidebar-outside-color: var(--quaternary-color);
+  --filter-bouton1-color: var(--primary-color);
+  --filter-bouton2-color: var(--tertiary-color);
+
+  /* Table */
+  --table-odd-background-color: var(--quaternary-color);
+  --table-odd-color: var(--secondary-color);
+  --table-even-background-color: var(--quaternary-color);
+  --table-even-color: var(--secondary-color);
+  --table-hover-background-color: var(--septenary-color);
+  --table-hover-color: var(--secondary-color);
+  --table-cell-border-color: var(--septenary-color);
+  --table-header-color: var(--secondary-color);
+  --table-header-background-color: var(--quaternary-color);
+
+  /* About */
+  --about-btn-download-color: var(--primary-color);
+  --about-btn-txt-color: var(--quaternary-color);
+
 }
