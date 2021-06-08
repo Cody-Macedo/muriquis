@@ -1,6 +1,8 @@
 :root {
   /* Palette de Couleurs */
   --primary-color: #75bf48;
+  /* Exemple: aerodynamics #4682B4*/
+
   --secondary-color:#272a34;
   --tertiary-color: #d0564a;
   --quaternary-color: #ffffff;
@@ -15,12 +17,12 @@
 
   /* Menu */
   --menu-link-txt-color: var(--secondary-color);
-  --menu-link-txt-hover-color: var(--primary-color);
-  --menu-link-hover-border-color: var(--primary-color);
-  --menu-bg-color: var(--quaternary-color);
+  --menu-link-txt-hover-color: var(--quaternary-color);
+  --menu-link-hover-border-color: var(--quaternary-color);
+  --menu-bg-color: var(--primary-color);
   --menu-border-bottom-color : var(--quinary-color);
-  --menu-btn-download-color: var(--primary-color);
-  --menu-btn-txt-color: var(--quaternary-color);
+  --menu-btn-download-color: var(--quaternary-color);
+  --menu-btn-txt-color: var(--primary-color);
 
   /* Filter */
   --filter-txt-title1-color: var(--primary-color);
